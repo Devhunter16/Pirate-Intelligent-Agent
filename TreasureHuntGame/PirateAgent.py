@@ -136,6 +136,8 @@ ef qtrain(model, maze, **opt):
     hsize = qmaze.maze.size//2   # history window size
     win_rate = 0.0
     
+    # Code that I wrote myself 
+    
     # For loop which loops through the number of epochs
     for epoch in range(n_epoch):     
         print('Starting new epoch baby yeah!')
@@ -190,6 +192,8 @@ ef qtrain(model, maze, **opt):
         if win_rate > epsilon:
             if completion_check(model, qmaze) == True: 
                 print('Completion check passed woot woot baby yeah!')
+                
+    # Code that I wrote myself^
 
     #Print the epoch, loss, episodes, win count, and win rate for each epoch
         dt = datetime.datetime.now() - start_time
